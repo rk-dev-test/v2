@@ -1,0 +1,834 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+
+    <title>Demo Template</title>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".mobile-trigger").click(function(){
+    $("body").toggleClass("main");
+  });
+});
+</script>
+
+
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+@font-face {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  src: url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0");
+  src: url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"), url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"), url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"), url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"), url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-size: 14px;
+  line-height: 1.7;
+  font-weight: 500;
+  font-style: normal;
+  font-family: libre Franklin, sans-serif;
+}
+
+.page-center {
+  float: none;
+  margin: 0 auto;
+  width: 96%;
+  max-width: 1200px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: libre Franklin, sans-serif;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.header-wrapper {
+  border-bottom: 1px solid rgb(185, 183, 183);
+  float: left;
+  width: 100%;
+}
+
+.header-inner {
+  padding-top: 19px;
+  float: left;
+  width: 100%;
+}
+
+.header-logo {
+  float: left;
+  padding-bottom: 28px;
+}
+
+.header-logo a {
+  font-family: Pacifico, sans-serif;
+  font-size: 34px;
+  line-height: 1.33;
+  color: #000;
+  font-weight: 700;
+}
+
+.header-menu {
+  float: right;
+}
+
+.header-menu ul li {
+  display: inline-block;
+}
+
+.header-menu ul li a {
+  font-family: Poppins, sans-serif;
+  font-size: 12px;
+  line-height: 1.83;
+  font-weight: 500;
+  color: #000;
+  padding: 12px 22px;
+  display: block;
+  letter-spacing: 1px;
+}
+
+.header-menu ul li:not(:last-child) a {
+  text-transform: uppercase;
+}
+
+.header-menu ul li a:hover {
+  text-decoration: underline;
+  opacity: 0.6;
+}
+
+.fa-shopping-cart:before {
+  content: "\f07a";
+}
+
+.header-menu ul li a i {
+  font-size: 15px;
+}
+
+
+/*-----------banner-css----------*/
+
+.banner-wrapper {
+  float: left;
+  width: 100%;
+  background-color: #f5f3f3;
+}
+
+.banner-img {
+  float: right;
+  width: 50%;
+  padding: 70px 0;
+}
+
+.banner-img img {
+  width: 100%;
+}
+
+.banner-text {
+  width: 45%;
+  float: left;
+  padding: 70px 20px;
+}
+
+.banner-text p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Poppins, sans-serif;
+  line-height: 1.5;
+  color: #a09c9c;
+}
+
+.banner-text p strong {
+  text-transform: uppercase;
+  color: #cc4646;
+}
+
+.banner-text h1 {
+  font-size: 46px;
+  color: #000;
+}
+
+.banner-text a {
+  padding: 20px 50px;
+  background: #a72222;
+  display: inline-block;
+  color: #fff;
+  transition: all 0.2s;
+  position: relative;
+  top: 0;
+  margin-top: 30px;
+}
+
+.banner-text a:hover {
+  background: #000;
+  top: -5px;
+}
+
+
+/*----------body-begin-------------*/
+
+.body-container-wrapper {
+  float: left;
+  width: 100%;
+  padding: 60px 0;
+}
+
+.top-bar {
+  padding: 10px;
+  text-align: center;
+}
+
+.top-bar p {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #e68c8c;
+}
+
+.top-bar h1 {
+  font-family: Pacifico, sans-serif;
+  font-size: 40px;
+}
+
+.img-1 img {
+  display: none;
+}
+
+.image-group {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.img-1 {
+  height: 250px;
+  width: 250px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 100%;
+  margin: 0 2%;
+  border: 1px solid #eee;
+}
+
+.top-bar-text {
+  display: flex;
+  padding: 40px 0;
+  text-align: left;
+}
+
+.text_v {
+  font-size: 25px;
+  padding-right: 50px;
+}
+
+.text_v>span {
+  display: block;
+}
+
+.top-bar .text_v p {
+  font-size: 13px;
+  color: #000;
+  text-transform: none;
+  line-height: 1.5;
+}
+
+
+/*--------------latest_news---------------*/
+
+.latest_news {
+  text-align: center;
+  padding-top: 60px;
+}
+
+.plane_image {
+  margin: 0 auto;
+  background: #da8720;
+  min-width: 70px;
+  min-height: 70px;
+  border-radius: 100%;
+  max-width: 70px;
+  position: relative;
+}
+
+.plane_image img {
+  max-width: 29px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+.latest_news_inner p {
+  color: #d77474;
+  text-transform: uppercase;
+}
+
+.latest_news_inner h1 {
+  font-size: 35px;
+}
+
+#emails,
+.submit {
+  padding: 8px 12px;
+  border: 1px solid #cccccc;
+  color: #6c6c6c;
+  font-size: 13px;
+  line-height: 23px;
+}
+
+#emails:focus,
+#emails:hover {
+  border: 1px solid #cccccc;
+  color: #6c6c6c;
+  outline: none;
+}
+
+.submit {
+  background: #000;
+  border-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background: #e44a4a;
+  border-color: #e44a4a;
+  color: #fff;
+}
+
+.checkbox {
+  margin: 25px 0;
+}
+
+.cta {
+  background-image: linear-gradient( 90deg, hsla(0, 0%, 100%, 0.89) 13%, hsla(0, 0%, 100%, 0) 57%), url(img/cta.jpeg);
+  background-position: 0px 0px, 50% 33%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  border-top: 1px solid #ebebeb;
+  margin: 60px 0;
+  overflow: hidden;
+}
+
+.cta .cta_inner {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.top-text-cta {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #e05252;
+}
+
+.cta p {
+  font-size: 16px;
+}
+
+.cta-button-block {
+  padding-top: 25px;
+}
+
+.cta-button-block a {
+  padding: 20px 30px;
+  background: #ca4d4d;
+  color: #fff;
+  font-size: 17px;
+}
+
+.cta-button-block a:hover {
+  background: #000;
+}
+
+.cta p .text-span {
+  color: #e05b5b;
+}
+
+.cta_inner {
+  max-width: 500px;
+}
+
+.sale-section {
+  padding: 60px 0;
+  border-top: solid 1px #ccc;
+  border-bottom: solid 1px #ccc;
+}
+
+.left-section img {
+  max-width: 250px;
+}
+
+.left-section {
+  text-align: center;
+  width: 50%;
+}
+
+.right-section {
+  width: 50%;
+}
+
+.sale-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-section a:hover {
+  text-decoration: underline;
+}
+
+.right-inner {
+  max-width: 400px;
+}
+
+
+/*-----------body-end----------------*/
+
+
+/*-----------footer-begin-----------*/
+
+.footer-container {
+  background-color: #eee;
+  float: left;
+  width: 100%;
+}
+
+.footer-logo {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-logo a {
+  font-family: Pacifico, sans-serif;
+  font-size: 34px;
+  line-height: 1.33;
+  color: #000;
+  font-weight: 700;
+}
+
+.fa-envelope-o:before {
+  content: "\f003";
+}
+
+.fa-map-marker:before {
+  content: "\f041";
+}
+
+.fa-phone:before {
+  content: "\f095";
+}
+
+.footer_address {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer_address strong,
+.footer_address span,
+.footer_address i {
+  display: flex;
+  justify-content: center;
+}
+
+.footer_address i {
+  font-size: 25px;
+}
+
+.footer_address>div {
+  width: 33.33%;
+  padding: 10px;
+}
+
+.footer_address strong {
+  margin: 10px 0;
+}
+
+.copyright {
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .banner-text,
+  .banner-img {
+    width: 100%;
+  }
+  .banner-text {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .img-1 {
+    margin: 10px auto;
+  }
+  .image-group {
+    display: block;
+    text-align: center;
+  }
+  .banner-img {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .top-bar-text {
+    display: block;
+  }
+  .text_v {
+    padding-right: 0;
+  }
+  .footer_address>div {
+    width: 90%;
+  }
+  .footer_address {
+    display: block;
+  }
+  .mobile-trigger i {
+    width: 25px;
+    height: 2px;
+    display: block;
+    background: #000;
+    margin: 5px 0;
+    position: relative;
+    transition: transform 0.3s, opacity 0.3s
+  }
+  .mobile-trigger {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+  }
+  .header-menu {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    background: #eee;
+    height: 100vh;
+    z-index: 9;
+    width: 250px;
+    transition: left 0.3s;
+  }
+  .cta .cta_inner {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .main .header-menu {
+    left: 0px;
+  }
+  .header-menu ul {
+    display: block;
+  }
+  .header-menu ul li {
+    display: block;
+  }
+  .header-menu ul li a i {
+    display: none;
+  }
+  .header-menu ul li a {
+    border-bottom: 1px solid #ccc;
+  }
+  .sale-inner {
+    display: block;
+    text-align: center;
+  }
+  .left-section,
+  .right-section {
+    text-align: center;
+    width: 100%;
+  }
+  .right-inner {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 479px) {
+  .footer_address>div {
+    font-size: 12px;
+  }
+  .banner-text h1 {
+    font-size: 30px;
+  }
+  .banner-text a {
+    padding: 15px 30px;
+  }
+  .latest_news_inner h1 {
+    font-size: 20px;
+  }
+  .submit {
+    font-size: 11px;
+  }
+  input#emails {
+    width: calc(100% - 160px);
+  }
+}
+
+
+
+
+
+
+</style>
+  </head>
+  <body>
+
+    <!---------header------------------>
+    <div class="header-wrapper">
+      <div class="page-center">
+         <div class="header-inner">
+            <div class="header-logo">
+               <a href="https://pompeo.webflow.io/" rel="home" title="Pompeo" alt="Pompeo">
+               Vimal
+               </a>
+               <div class="mobile-trigger visible-phone"><i></i><i></i><i></i></div>
+            </div>
+            <div class="header-menu">
+               <ul>
+                  <li>
+                     <a href="https://pompeo.webflow.io/">
+                     Home
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://pompeo.webflow.io/about-us">
+                     About
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://pompeo.webflow.io/shop">
+                     Shop
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://pompeo.webflow.io/contact-us">
+                     contact
+                     </a>
+                  </li>
+                  <li>
+                     <a href="https://pompeo.webflow.io/#">
+                     <span>
+                    <i class="fa fa-shopping-cart fa-5" aria-hidden="true"></i>
+                     </span>
+                     Cart
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+<!------------banner--------------->
+<div class="banner-wrapper">
+   <div class="page-center">
+      <div class="banner-inner">
+         <div class="banner-text">
+            <p>
+               <strong>Pompeo POttery</strong>
+            </p>
+            <h1>Unique Porcelain & Stone Collection</h1>
+            <p>Unique & modern pottery made by our master in porcelain & stones</p>
+            <a href="https://pompeo.webflow.io/shop">Shop Collection</a>
+         </div>
+         <div class="banner-img">
+            <img src="img/tree.jpg" alt="Tree">
+         </div>
+      </div>
+   </div>
+</div>
+
+<!---------body----------->
+<div class="body-container-wrapper">
+   <div class="body-container">
+      <div class="page-center">
+         <div class="top-bar">
+            <p>Product Categories</p>
+            <h1>Porcelain & Pottery</h1>
+            <div class="image-group">
+               <div class="img-1" style="background-image: url('img/vases.jpg');">
+                  <img src="img/vases.jpg" alt="Vases">
+               </div>
+               <div class="img-1 img-2"  style="background-image: url('img/mug.jpg');">
+                  <img src="img/mug.jpg" alt="Mug">
+               </div>
+               <div class="img-1 img-3" style="background-image: url('img/plate.jpg');">
+                  <img src="img/plate.jpg" alt="Plate">
+               </div>
+            </div>
+            <div class="top-bar-text">
+               <div class="pottery text_v">
+                  Hand Grafted
+                  <span>Pottery since 1990</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus posuere.</p>
+               </div>
+               <div class="produts text_v">
+                  We Provide Premium
+                  <span>Pottery Produts</span>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus posuere.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+      <div class="sale-section">
+         <div class="page-center">
+            <div class="sale-inner">
+               <div class="left-section">
+                  <img src="img/gold.png">
+               </div>
+               <div class="right-section">
+                  <div class="right-inner">
+                     <h3>Gold &amp; Black Pottery</h3>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore dolore aua. Ut enim ad minim veniam, quis nostrud exercitationulco laboris nisi ut aliquip ex ea commodo consequatuisaute.</p>
+                     <a href="https://pompeo.webflow.io/product/wine-pottery" class="button-link product">View Details</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+      <div class="cta">
+         <div class="page-center">
+            <div class="cta_inner">
+               <div class="top-text-cta">Pompeo POttery</div>
+               <h2>Ready to start shopping?</h2>
+               <p>Lorem ipsum dolor sit amet, <span class="text-span">consectetur adipiscing elit</span>. Suspendisse varius enim in eros elementum.</p>
+               <div class="cta-button-block"><a href="#" class="button dark w-button">New Collection</a></div>
+            </div>
+         </div>
+      </div>
+
+
+      <div class="latest_news">
+         <div class="page-center">
+            <div class="latest_news_inner">
+               <div class="plane_image">
+                  <img src="img/plane.png">
+               </div>
+               <p><span>Latest news</span></p>
+               <h1>Latest news & New updates</h1>
+               <div class="form">
+                  <form action="/action_page.php">
+                     <input type="email" id="emails" name="emails" placeholder="Enter your email">
+                     <input type="submit" value="SUBSCRIBE" class="submit">
+                     <div class="checkbox">
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        <label for="vehicle1"> Sign up for our newsletter</label>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+
+
+
+
+<!----------footer---------->
+<div class="footer-container-wrapper">
+   <div class="footer-container">
+      <div class="page-center">
+         <div class="footer-logo">
+            <a href="https://pompeo.webflow.io/" rel="home" title="Pompeo" alt="Pompeo">
+            Vimal
+            </a>
+         </div>
+         <div class="footer_address">
+            <div class="email">
+               <i class="fa fa-envelope-o" aria-hidden="true"></i>
+               <strong>EMAIL</strong>
+               <span>vimalsaini35@gmail.com</span>
+            </div>
+            <div class="find">
+               <i class="fa fa-map-marker fa-6" aria-hidden="true"></i>
+               <strong>FIND</strong>
+               <span>
+               R.K.Puram sec-1 new Delhi 110022
+               </span>
+            </div>
+            <div class="phone">
+               <i class="fa fa-phone fa-6" aria-hidden="true"></i>
+               <strong>CALL</strong>
+               <span>
+               +919650252672
+               </span>
+            <div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<div class="copyright">
+   <div class="page-center">
+      <p>Template design by Vimal Saini</p>
+   </div>
+</div>
+
+
+  </body>
+</html>
